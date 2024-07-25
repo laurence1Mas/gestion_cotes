@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19DFC112-34A9-4CD3-A865-841215B851B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gestion_cotes</RootNamespace>
+    <AssemblyName>gestion_cotes</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\Clsannee.cs" />
+    <Compile Include="classes\clsCotation.cs" />
+    <Compile Include="classes\ClsCours.cs" />
+    <Compile Include="classes\Clsenseignant.cs" />
+    <Compile Include="classes\Clsetudiant.cs" />
+    <Compile Include="classes\clsetudiants.cs" />
+    <Compile Include="classes\Clsinscription.cs" />
+    <Compile Include="classes\Clsoptions.cs" />
+    <Compile Include="classes\ClsPayement.cs" />
+    <Compile Include="classes\Clspromotion.cs" />
+    <Compile Include="classes\clspromotions.cs" />
+    <Compile Include="classes\clsrelever.cs" />
+    <Compile Include="classes\connexion.cs" />
+    <Compile Include="classes\MYCONNECTION.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.Designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reports\carteEtu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\carteEtu.Designer.cs">
+      <DependentUpon>carteEtu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports\coursliste.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\coursliste.Designer.cs">
+      <DependentUpon>coursliste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports\ex.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\ex.Designer.cs">
+      <DependentUpon>ex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports\ex2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\ex2.Designer.cs">
+      <DependentUpon>ex2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports\recupayement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\recupayement.Designer.cs">
+      <DependentUpon>recupayement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports\releveCote.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\releveCote.Designer.cs">
+      <DependentUpon>releveCote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControles\userAutres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControles\userAutres.Designer.cs">
+      <DependentUpon>userAutres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControles\userCotation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControles\userCotation.Designer.cs">
+      <DependentUpon>userCotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControles\userCours.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControles\userCours.Designer.cs">
+      <DependentUpon>userCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControles\userEnseignant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControles\userEnseignant.Designer.cs">
+      <DependentUpon>userEnseignant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControles\userEtudiant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControles\userEtudiant.Designer.cs">
+      <DependentUpon>userEtudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControles\userInscription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControles\userInscription.Designer.cs">
+      <DependentUpon>userInscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControles\userPayement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControles\userPayement.Designer.cs">
+      <DependentUpon>userPayement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControles\userSms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControles\userSms.Designer.cs">
+      <DependentUpon>userSms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewlisteEtu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewlisteEtu.Designer.cs">
+      <DependentUpon>viewlisteEtu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reports\carteEtu.resx">
+      <DependentUpon>carteEtu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\coursliste.resx">
+      <DependentUpon>coursliste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\ex.resx">
+      <DependentUpon>ex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\ex2.resx">
+      <DependentUpon>ex2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\recupayement.resx">
+      <DependentUpon>recupayement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\releveCote.resx">
+      <DependentUpon>releveCote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControles\userAutres.resx">
+      <DependentUpon>userAutres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControles\userCotation.resx">
+      <DependentUpon>userCotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControles\userCours.resx">
+      <DependentUpon>userCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControles\userEnseignant.resx">
+      <DependentUpon>userEnseignant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControles\userEtudiant.resx">
+      <DependentUpon>userEtudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControles\userInscription.resx">
+      <DependentUpon>userInscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControles\userPayement.resx">
+      <DependentUpon>userPayement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControles\userSms.resx">
+      <DependentUpon>userSms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewlisteEtu.resx">
+      <DependentUpon>viewlisteEtu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icones\menu_rounded_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\4195037934.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icones\student_registration_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icones\teacher_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icones\book_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icones\cash_in_hand_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icones\exam_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\isc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\user_240px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\name_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\password_24px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
